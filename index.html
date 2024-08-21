@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: purple;
+        }
+
+        header {
+            background-color: gold;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            color: purple;
+        }
+
+        nav a {
+            margin-left: 30px;
+            color: purple;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .showcase {
+            padding: 50px 10%;
+            background-color: lightcyan;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .showcase-text {
+            width: 45%;
+        }
+
+        .showcase-text h1 {
+            font-size: 2.5em;
+            line-height: 1.2;
+            color: #4a2c4e;
+        }
+
+        .showcase-text h1 span {
+            color: #9933cc;
+        }
+
+        .showcase-text h2 {
+            color: #4a2c4e;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .showcase-text select,
+        .showcase-text button {
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+
+        .showcase-text button {
+            background-color: #9933cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .showcase img {
+            width: 50%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .destinations {
+            padding: 50px 10%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .destinations h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4a2c4e;
+        }
+
+        .destinations p {
+            margin-bottom: 40px;
+            color: #6b6b6b;
+        }
+
+        .destination {
+            display: inline-block;
+            width: 30%;
+            margin: 15px 1.5%;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .destination h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #4a2c4e;
+        }
+        
+
+        .contact {
+            padding: 50px 10%;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4a2c4e;
+        }
+
+        .contact p {
+            margin-bottom: 30px;
+            color: #6b6b6b;
+        }
+
+        .contact input,
+        .contact select {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px 30px;
+            background-color: #9933cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">explorer</div>
+        <nav>
+            <a>Hotels</a>
+            <a>Bike Rentals</a>
+            <a>Restaurants</a>
+        </nav>
+    </header>
+
+    <section class="showcase">
+        <div class="showcase-text">
+            <h2>WELCOME TO EXPLORER</h2>
+            <h1>Your Adventure Travel <span>Expert</span></h1>
+            <select>
+                <option>Choose</option>
+            </select>
+            <button>Explore</button>
+        </div>
+        <div class="showcase-img">
+            <img src="./image/img 1.webp" alt="Adventure Image">
+        </div>
+    </section>
+
+    <section class="destinations">
+        <h2>Destinations</h2>
+        <p>Just for you. Because you and your bike are special to us!</p>
+
+        <div class="destination">
+            <img src="./image/ooty.webp" alt="Ooty">
+            <h3>Small Ride across town in mid summer heat</h3>
+            <p>Ooty</p>
+        </div>
+
+        <div class="destination">
+            <img src="./image/Thanjavur.webp" alt="Thanjavur">
+            <h3>Surrounded by paddy fields</h3>
+            <p>Thanjavur</p>
+        </div>
+
+        <div class="destination">
+            <img src="./image/kanyakumari.webp" alt="kannyakumari">
+            <h3>Explore the southernmost tip of India</h3>
+            <p>Kanyakumari</p>
+        </div>
+
+        <div class="destination">
+            <img src="./image/Mahabalipuram.avif" alt="Mahabalipuram">
+            <h3>Beautiful sculptures that mesmerize us</h3>
+            <p>Mahabalipuram</p>
+        </div>
+
+        <div class="destination">
+            <img src="./image/rameshwaram.webp" alt="Rameshwaram">
+            <h3>Fall in love with the divine</h3>
+            <p>Rameshwaram</p>
+        </div>
+
+        <div class="destination">
+            <img src="./image/Veilankanni.webp" alt="Velakanni">
+            <h3>Feel the spiritual vibes</h3>
+            <p>Velankanni</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Our Sales Team will reach out to you ASAP!</p>
+        <input type="text" placeholder="Name">
+        <select>
+            <option>Your Home Town</option>
+        </select>
+        <select>
+            <option>Where would you like to go?</option>
+        </select>
+        <input type="text" placeholder="Contact Number">
+        <button>Submit Interest</button>
+    </section>
+
+</body>
+
+</html>
